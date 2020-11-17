@@ -38,12 +38,12 @@ bool readBinary(string line, int& val)
 
 int main()
 {
-	// read from file using fstream
+	// read numbers from input file "BinaryIn.dat"
 	ifstream infile("BinaryIn.dat");
 	infile.open("BinaryIn.dat");
-	// print header
+	// Output the binary and decimal headings
 	cout << setw(20) << "Binary Number" << setw(30) << "Decimal Equivalent" << endl;
-	// read line by line until end of file
+	// reads line by line until the file is done
 	string input;
 	while (infile >> input)
 	{
